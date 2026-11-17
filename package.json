@@ -1,0 +1,25 @@
+{
+  "name": "blockchainiq-langchain-tool",
+  "version": "1.0.0",
+  "description": "LangChain tools for the Blockchain IQ x402 pay-per-call crypto data API (market brief + event risk), paid in USDC on Base via x402.",
+  "type": "module",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "example:brief": "tsx examples/run-brief.ts",
+    "example:event-risk": "tsx examples/run-event-risk.ts"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.0",
+    "@x402/evm": "^2.0.0",
+    "@x402/fetch": "^2.0.0",
+    "viem": "^2.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
